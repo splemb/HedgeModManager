@@ -114,8 +114,8 @@ namespace HedgeModManager
             Singleton.SetInstance(HttpClient);
             Singleton.SetInstance<IWindowService>(new WindowServiceImplWindows());
 
-            AprilFools      = DateTime.Now.Day == 1 && DateTime.Now.Month == 4;
-            IizukaBirthday  = DateTime.Now.Day == 16 && DateTime.Now.Month == 3;
+            //AprilFools      = DateTime.Now.Day == 1 && DateTime.Now.Month == 4;
+            //IizukaBirthday  = DateTime.Now.Day == 16 && DateTime.Now.Month == 3;
 
             // Check for Wine, assuming Linux
             RegistryKey key = null;
@@ -1150,7 +1150,7 @@ namespace HedgeModManager
                 outlineBorder.CornerRadius = (CornerRadius)window.FindResource("HedgeWindowRoundedCornerRadius");
                 
                 // Cursed
-                Unsafe.Unbox<Thickness>(window.FindResource("HedgeWindowGridMargin")) = new Thickness(2);
+                //Unsafe.Unbox<Thickness>(window.FindResource("HedgeWindowGridMargin")) = new Thickness(2);
             }
         }
 
